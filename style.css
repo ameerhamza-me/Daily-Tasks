@@ -46,9 +46,14 @@ body {
     border: none;
     border-radius: 25px;
     padding: 10px 18px;
-    font-size: 15px;
-    cursor: pointer;
+    font-size: 20px;
+    
     flex-shrink: 0;
+}
+button:hover{
+    background-color: brown;
+    cursor: pointer;
+    color: azure;
 }
 
 .task-form {
