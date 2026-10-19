@@ -153,6 +153,7 @@ button:hover{
     cursor: pointer;
     border: none;
     background: transparent;
+    border-radius: 4px;
 }
 
 @media (max-width: 768px) {
