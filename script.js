@@ -5,12 +5,12 @@ const taskInput = document.getElementById("taskTitle");
 const saveBtn = document.getElementById("saveBtn");
 const taskList = document.getElementById("taskList");
 
-newBtn.addEventListener("click", function () {
+newBtn.addEventListener("click",()=> {
     taskForm.style.display = "block";
     taskInput.focus();
 });
 
-saveBtn.addEventListener("click", function () {
+saveBtn.addEventListener("click",()=> {
     const title = taskInput.value.trim();
 
     if (title === "") {
@@ -27,7 +27,7 @@ saveBtn.addEventListener("click", function () {
     const taskTitle = document.createElement("span");
     taskTitle.textContent = title;
 
-    checkBox.addEventListener("change", function () {
+    checkBox.addEventListener("change",()=> {
         if (checkBox.checked) {
             taskTitle.style.textDecoration = "line-through";
         } else {
@@ -50,13 +50,13 @@ saveBtn.addEventListener("click", function () {
     const editBtn = actions.querySelector(".edit-btn");
     const deleteBtn = actions.querySelector(".delete-btn");
 
-    editBtn.addEventListener("click", function () {
+    editBtn.addEventListener("click",() =>{
         taskInput.value = taskTitle.textContent;
         task.remove();
         taskInput.focus();
     });
 
-    deleteBtn.addEventListener("click", function () {
+    deleteBtn.addEventListener("click",()=> {
         task.remove();
     });
 
